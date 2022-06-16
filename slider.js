@@ -4,7 +4,7 @@ const thirdControl = document.getElementById("third_item");
 
 const sliderContainer =document.querySelector(".slides_container");
 const CHOSEN_CLASS ="chosen_control";
-console.log(sliderContainer)
+console.log(sliderContainer);
 
 firstControl.addEventListener("click" , () => {
 sliderContainer.style.transform ="translateX(40%)";

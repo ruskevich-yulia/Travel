@@ -4,18 +4,18 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
    
     margin: 0 auto;
     width: 1440px;
-    
-    
     position: relative;
 }
 header {
     position: absolute;
     top: 0;
-
     border: 1px solid rgba(255, 68, 0, 0.5);
     background: rgba(255, 68, 0, 0.726);
     width: 100%;
@@ -85,8 +85,13 @@ h1 {
     border-radius: 8px;
     background: #0D606F;
     border: #0D606F;
-
-
+    cursor: pointer;
+    transition: all 1s;
+}
+.login:hover {
+    transform: scale(1.2);
+    background: #033a44;
+    transition: all 1s;
 }
 
 a {
@@ -103,7 +108,7 @@ a {
     display: flex;
     
     
-    background-image: url(./assets/first_page.png);
+    background-image: url(./assets/first_page.jpg);
     background-size: contain;
     color: white;
 }
@@ -187,8 +192,14 @@ a {
     margin-left: 32.5px;
     padding-top: 3px;
     letter-spacing: 1.3px;
+    cursor: pointer;
+    transition: all 1s;
  }
 
+ .start_planning:hover {
+    transform: scale(1.1);
+    background: #012c33;
+    transition: all 1s;}
 
  .steps {
      display: flex;
@@ -240,8 +251,7 @@ a {
      display: flex;
      flex-direction: row;
      width: 1440px;
-     /* height: ; */
-     
+          
  }
 
  .block1 ,
@@ -256,27 +266,51 @@ a {
      background-color: #F2785C;
      justify-content: center;
      align-items: center;
+     cursor: pointer;
+     transition: all 150ms ease-in-out;
    
  }
+ 
+ 
+ .block1:hover,
+ .block1:focus   {
+     color: #f5a795;
+     box-shadow: 0 0 10px 0 rgb(243, 208, 208) inset, 0 0 10px 4px rgb(226, 207, 168);
+ } 
+
+ .block2:hover,
+ .block2:focus   {
+    color: #f5a795;
+    box-shadow: 0 0 10px 0 rgb(228, 200, 200) inset, 0 0 10px 4px rgb(226, 207, 168);
+} 
+
+.block3:hover,
+.block3:focus   {
+    color: #f5a795;
+    box-shadow: 0 0 10px 0 rgb(231, 192, 192) inset, 0 0 10px 4px rgb(226, 207, 168);
+} 
 
 
 
- .bike {
+  .velo_bike {
      width: 52px;
      height: 46px;
      border: 1px solid #F2785C;
-     background-color: #F2785C;
+    background-color: #F2785C;} 
     
+  .aero,
+  .calendar,
+  .velo_bike  {
+     display: flex;
+     
  }
-  
 
  .calend {
      width: 54px;
      height: 54px;
      border: 1px solid #F2785C;
      background-color: #F2785C;
- 
-    }
+     }
 
  .fly {
      
@@ -396,7 +430,7 @@ margin-top: -3px;
 
 
 .slider_item_1   {
-    background-image:url(./assets/full_see.png);
+    background-image:url(./assets/full_see.jpg);
     
 }
 
@@ -412,13 +446,13 @@ margin-top: -3px;
 
 
 .slider_item_2 {
-    background-image: url(./assets/japan.png);
+    background-image: url(./assets/japan.jpg);
     padding-top: 713px;
     padding-left: 16px;
 }
 
 .slider_item_3 {
-    background-image: url(./assets/full_bridge.png);
+    background-image: url(./assets/full_bridge.jpg);
     padding-top: 709px;
     padding-left: 15px;
 }
@@ -475,6 +509,14 @@ margin-top: -3px;
     justify-content: center;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.find_more:hover   {
+    transform: scale(1.2);
+    background: #0a464e;
+    transition: all 1s;
 }
 
 
@@ -498,7 +540,7 @@ margin-top: -3px;
     position: relative;
    height: 1334px;
     
-    background-image: url(./assets/lake.png);
+    background-image: url(./assets/lake.jpg);
     background-repeat: no-repeat;
     z-index: 1;
     
@@ -592,20 +634,6 @@ margin-top: -3px;
 }
 
 
-/* .Utach,
-.longest_journey
-{
-margin-top: -10px;
-}
-
-.mountains {
-    margin-top: -11px;
-}
-
-.longest_journey {
-    margin-left: 115px;
-} */
-
 
 .button_see {
     display: flex;
@@ -625,11 +653,21 @@ margin-top: -10px;
     justify-content: center;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
+    transition: all 1s;
     }
+
+ .button_see:hover {
+     transform: scale(1.2);
+     background: #012c33 ;
+     transition: all 1s;
+ }
 
   .arrow_1 {
       margin-left: -6px;
   } 
+
+
 
 footer {
 
@@ -646,7 +684,6 @@ z-index: 3;
 
   .title_footer {
       display: flex;
-     
       font-family: "Red Hat Text", sans-serif;
       font-size: 16px;
       font-weight: 500;
