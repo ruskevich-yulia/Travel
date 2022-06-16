@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Travel</title>
+    <link rel="icon" href="./assets/cropped-favicon.png" type="image/png" sizes="32*32">
     <link rel="stylesheet" href="./style.css">
-  
+     
 </head>
 <body>
 
@@ -17,15 +18,15 @@
         <header>
          <div class="headerWraper">
             <div class="img1">
-                <img src="./assets/Vector.png" alt="vector" >
+                <img src="./assets/Vector.svg" alt="vector" >
                 <h1>Travel Portal</h1>
             </div>
             <nav class="howPlaneDest">
                 <ul class="headerMenu">
                   <li><a href="#">How It Works</a></li>
-                  <li><a href="#">Plan Your Trip</a></li>
-                  <li><a href="#">Destinations</a></li>
-                  <li><a href="#">Travel Stories</a></li>
+                  <li><a href="#PYT">Plan Your Trip</a></li>
+                  <li><a href="#dest">Destinations</a></li>
+                  <li><a href="#travel">Travel Stories</a></li>
                 </ul>
             </nav>
             <button class="login">Login</button>
@@ -53,7 +54,7 @@
            </section>
                    
           
-          <section class="steps">
+          <section class="steps" id="PYT">
             <h2 class="path">3 STEPS TO THE PERFECT TRIP</h2>
 
             <div class="icons">
@@ -61,16 +62,17 @@
                 <div class="ic">
 
 
+                   
                    <div class="block1">
-                       <img class="bike" src="./assets/bike.png" alt="bike">
-                   </div> 
+                     <img class="velo_bike" src="./assets/bike.svg" alt="bike">
+                   </div>
                                    
                     <div class="block2">
-                        <img class="calend" src="./assets/calend.png" alt="calendar">
-                    </div>
+                      <img class="calendar" src="./assets/calendar.svg" alt="calendar">
+                    </div> 
                  
                    <div class="block3">
-                     <img class="fly" src="./assets/fly.png" alt="airplane">
+                      <img class="aero" src="./assets/aero.svg"  alt="plane">
                    </div>
                  
                 </div>
@@ -89,7 +91,7 @@
           </section>  
 
 
-          <section class="destination">
+          <section class="destination" id="dest">
             <h2 class="pop">POPULAR DESTINATIONS</h2>
             <div class="container_2">
               <div class="slider_wrapper">
@@ -120,7 +122,7 @@
             
 
              <button class="find_more"><span>Find More</span>
-                   <img  class="arrow"  src="./assets/arrow.png" alt="arrow">
+                   <img  class="arrow"  src="./assets/arrow.svg" alt="arrow">
                
              </button>
           </section>
@@ -132,13 +134,13 @@
      
    
    
-   <section class="travel_stories">
+   <section class="travel_stories" id="travel">
     <h2 class="stories">TRAVEL STORIES</h2>
 
     <div class="interesting_stories">
       <div class="content_container">
        <div class="Thailand">
-          <div class="foto_Thai"><img src="./assets/gorge.png" alt="gorge" width="408" height="258"></div>
+          <div class="foto_Thai"><img src="./assets/gorge.jpg" alt="gorge" width="408" height="258"></div>
           <div class="about_Thailand">
                <div class="title_Thai">10 Photos of Attractive Thailand</div>
                <div class="th">Lorem ipsum dolor sit amet ,consectetur adipiscing elit, sed do eiusmod tempor
@@ -154,7 +156,7 @@
 
 
        <div class="Utach">
-         <div class="foto_parc" ><img src="./assets/parc.png" alt="Canyonlands_National_Parc"></div>
+         <div class="foto_parc" ><img src="./assets/parc.jpg" alt="Canyonlands_National_Parc"></div>
          <div class="about_parc">
             <div class="title_canyonland">Canyonlands National Park, Utah</div>
                 <div class="U">Lorem ipsum dolor sit amet ,consectetur adipiscing elit, sed do eiusmod tempor
@@ -172,7 +174,7 @@
 
 
        <div class="mountains">
-         <div class="foto_mountains"><img src="./assets/mountain.png" alt="mountains"> </div>
+         <div class="foto_mountains"><img src="./assets/mountain.jpg" alt="mountains"> </div>
          <div class="about_mountains">
              <div class="title_mountains">I left my heart in the Mountains!</div>
              <div class="M">Lorem ipsum dolor sit amet ,consectetur adipiscing elit, sed do eiusmod tempor
@@ -187,7 +189,7 @@
 
 
        <div class="longest_journey">
-         <div class="foto_road"><img src="./assets/rode.png" alt="road"> </div>
+         <div class="foto_road"><img src="./assets/rode.jpg" alt="road"> </div>
          <div class="about_journey">
            <div class="title_journey">The Longest journey in my life!</div>
            <div class="J">Lorem ipsum dolor sit amet ,consectetur adipiscing elit, sed do eiusmod tempor
@@ -203,7 +205,7 @@
 
       <div class="button_see">
         <div>See More</div>
-        <img  class="arrow_1"  src="./assets/arrow.png" alt="arrow">
+        <img  class="arrow_1"  src="./assets/arrow.svg" alt="arrow">
       </div>
     </div>
     </div>
@@ -213,11 +215,11 @@
 
   <footer>
     <div class="title_footer">All Rights Reserved &copy; Travel Portal</div>
-    <div class="inst"><img src="./assets/inst.png" alt="instagramm"></div>
-    <div class="youtube"><img src="./assets/youtube.png" alt="youtube">
-       <div class="play"><img src="./assets/play.png" alt="play"></div>
+    <div class="inst"><img src="./assets/inst.svg" alt="instagramm"></div>
+    <div class="youtube"><img src="./assets/youtube.svg" alt="youtube">
+       <div class="play"><img src="./assets/play.svg" alt="play"></div>
     </div>
-    <div class="twitter"><img src="./assets/twitter.png" alt="twitter"></div>
+    <div class="twitter"><img src="./assets/twitter.svg" alt="twitter"></div>
   </footer>
   <script  src="./slider.js" defer></script>   
 </body>
