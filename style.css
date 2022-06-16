@@ -7,9 +7,9 @@
 body {
    
     margin: 0 auto;
-    max-width: 1440px;
-    border: 1px solid black;
-    height: 100vh;
+    width: 1440px;
+    
+    /* height: 100vh; */
     position: relative;
 }
 header {
@@ -332,33 +332,130 @@ margin-top: -3px;
     font-size: 40px;
     color: #F2785C;
     margin-top: 225px;
-    margin-left: 469px;
-
+    
 }  
 
+.destination {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.points   {
+  
+}
+
+.container_2 {
+    width: 1440px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 46px;
+
+}
+
+.slider_wrapper {
+    width: 100%;
+    height:800px;
+    background: white;
+    overflow: hidden;
+  
+}
+
+.slides_container  {
+    display: flex;
+    gap: 60px;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0%);
+    transition: transform 1s;
+   
+}
+
+
+.slider_item_1 ,
+.slider_item_2 ,
+.slider_item_3
+ {
+    flex-shrink: 0;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    
+    border-radius: 12px;
+    font-family: "Red Hat Text";
+    font-size: 32px;
+    font-weight: 500;
+    color: white;}
+    
+
+
+.slider_item_1   {
+    background-image:url(./assets/full_see.png);
+    
+}
+
+
+.Japan{
+    margin-left: -1px;
+    margin-top: 5px;
+}
+
+.USA {
+    margin-top: 4px;
+}
+
+
+.slider_item_2 {
+    background-image: url(./assets/japan.png);
+    padding-top: 713px;
+    padding-left: 16px;
+}
+
+.slider_item_3 {
+    background-image: url(./assets/full_bridge.png);
+    padding-top: 709px;
+    padding-left: 15px;
+}
+
+
+
+.slider_controls   {
     display: flex;
     width: 1440px;
     height: 20px;
     justify-content: center;
-    margin-top: 29px;
- 
+    margin-top: -36px; 
+    gap: 10px;
+    
+    
 }
 
 
-.point1 ,
-.point2,
-.point3
+
+.control_item
 
 {
     display: flex;
     width: 20px;
     height: 20px;
-    border: 1px solid #F2785C;
+    border: 1px solid #f5a795;
     border-radius: 11px;
-    background-color: #F2785C;
+    background-color: #f5a795;
+    cursor: pointer;
+} 
+
+
+.chosen_control {
+    background: #F2785C;
+    transition : all 1s;
 }
+
+
 
 
 .find_more   {
@@ -373,8 +470,200 @@ margin-top: -3px;
     border: 1px solid #0D606F;
     border-radius: 8px;
     background-color: #0D606F;
-    margin-left: 607px;
-    margin-top: 41px;
+    margin-top: 15px; 
     justify-content: center;
     align-items: center;
+    gap: 12px;
 }
+
+
+.stories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Text";
+    font-size: 40px;
+    font-weight: 500;
+    color: #F2785C;
+    margin-top: 81px;
+}
+
+
+.interesting_stories {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1445px;
+    height: 1271px;
+    background: rgba(255, 255, 255, 0.626);
+    
+    z-index: 1;
+    
+   
+}
+
+.travel_stories {
+    width: 1445px;
+    height: 1333px;
+    display: flex;
+    position: relative;
+    
+    /* z-index: 1; */
+    background-image: url(./assets/lake.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-top: 39px;
+   
+}
+
+.Thailand,
+.Utach,
+.mountains,
+.longest_journey
+{
+    display: flex;
+    flex-direction: row;
+    height: 290px;
+    width: 1445px;
+    gap: 37px;
+    margin-left: 116px;
+
+}
+
+
+.Thailand   {
+    margin-top: 41px;
+}
+.about_Thailand {
+    display: flex;
+    flex-direction: column;
+    width: 760px;
+    height: 250px;
+    
+    
+}
+
+.title_Thai,
+.title_canyonland,
+.title_mountains,
+.title_journey
+{
+    display: flex;
+    width: 760px;
+    height: 42px;
+    font-family: "Aleo", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #0D606F;
+}
+
+
+.th,
+.U,
+.M,
+.J
+
+{
+    display: flex;
+    flex-direction: column;
+    font-family: "Aleo",sans-serif;
+    color: #0D606F;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 23px;
+    width: 760px;
+}
+
+.foto_Thai,
+.foto_parc,
+.foto_mountains,
+.foto_road 
+{
+    width: 408px;
+    height: 258px;
+    border-radius: 8px;
+}
+
+
+.Utach,
+.longest_journey
+{
+margin-top: -10px;
+}
+
+.mountains {
+    margin-top: -11px;
+}
+
+.longest_journey {
+    margin-left: 115px;
+}
+
+
+.button_see {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 230px;
+    color: white;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    height: 59px;
+    border: 1px solid #0D606F;
+    border-radius: 8px;
+    background-color: #0D606F;
+       
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+   margin-left: 608px;}
+
+  .arrow_1 {
+      margin-left: -6px;
+  } 
+
+footer {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+position: absolute;
+bottom: 0;
+z-index: 3;
+}
+
+
+
+
+  .title_footer {
+      display: flex;
+     
+      font-family: "Red Hat Text", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      margin-left: 590px;
+      margin-top: -63px;
+    
+  }
+
+  .twitter {
+    margin-left: 30px;
+    margin-top: -62px;
+  }
+    
+
+  .youtube {
+      display: flex;
+      margin-left: 21px;
+      margin-top: -66px;
+  }
+  .play {
+      margin-left: -22px;
+      margin-top: 7px;
+  }
+  .inst  {
+      margin-left: 331px;
+      margin-top: -61px;
+  }
